@@ -1,0 +1,50 @@
+!!!  
+%html  
+  %head  
+    %title Newleaf Solutions - We make apps for little fingers!
+    <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    %link(rel="stylesheet" href="css/less.css")  
+    %link(rel="stylesheet" href="css/styles.css")  
+    %link(rel="javascript" href="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js")  
+    %link(rel="javascript" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.10/jquery-ui.min.js")  
+    <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-21873709-1']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+    </script>
+  %body
+    #wrapper
+      %a.right{:href => "http://www.facebook.com/pages/Newleaf-Learning-Apps/157412190983512?sk=wall", :target => "new", :title => "follow us on Facebook"}
+        %img{:src => "images/fb.png"}
+      &#32;
+      %a.right{:href => "http://twitter.com/_newleaf_", :target => 'new', :title => "follow us on Twitter"}
+        %img{:src => "images/twitter.png"}
+
+      #nav
+        %ul
+          %li 
+            %a{:href => "/"}
+              busy bunnies
+          %li 
+            %a{:href => "/wordexplorer"}
+              word explorer
+          %li 
+            %a{:href => "/contact"}
+              contact us
+
+      #header  
+        %h1 Newleaf Solutions
+        %h2.bright We make apps for little fingers!
+    
+      =yield
+
+      #footer  
+        %p.copyright  
+          &copy; Copyright 2011 ... Newleaf Solutions
